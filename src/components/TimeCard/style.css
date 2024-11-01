@@ -1,0 +1,123 @@
+.work-background-color {
+  background-color: hsl(15, 100%, 70%) !important;
+}
+
+.play-background-color {
+  background-color: hsl(195, 74%, 62%) !important;
+}
+
+.study-background-color {
+  background-color: hsl(348, 100%, 68%) !important;
+}
+
+.exercise-background-color {
+  background-color: hsl(145, 58%, 55%) !important;
+}
+
+.social-background-color {
+  background-color: hsl(264, 64%, 52%) !important;
+}
+
+.self-care-background-color {
+  background-color: hsl(43, 84%, 65%) !important;
+}
+
+p {
+  margin-top: 0;
+}
+
+.time-card {
+  position: relative;
+  overflow: hidden;
+  min-width: 18rem;
+  max-width: 18rem;
+  min-height: 9rem;
+  max-height: 9rem;
+  margin-bottom: 1.3rem;
+  border-radius: 1rem;
+}
+.time-card__main-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  padding: 1.7rem;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: inherit;
+}
+.time-card__main-container:hover:not(:has(.time-card__icon-container:hover)) {
+  background-color: hsl(235, 45%, 35%);
+  cursor: pointer;
+}
+.time-card__svg {
+  position: absolute;
+  top: -0.6rem;
+  right: 1rem;
+  opacity: 25%;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(16%) saturate(2225%) hue-rotate(197deg) brightness(95%) contrast(101%);
+}
+.time-card__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-card__title {
+  font-weight: 500;
+}
+.time-card__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.time-card__icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.time-card__icon {
+  height: 20%;
+}
+.time-card__icon:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(17%) saturate(6422%) hue-rotate(174deg) brightness(120%) contrast(100%);
+}
+.time-card__time-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-card__hours {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.time-card__previous-hours {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+
+@media (min-width: 400px) {
+  .time-card {
+    min-width: 13.5rem;
+    max-width: 13.5rem;
+    min-height: 12.6rem;
+    max-height: 12.6rem;
+    margin-bottom: revert;
+  }
+  .time-card__main-container {
+    height: 83%;
+  }
+  .time-card__title-container {
+    margin-bottom: 0.5rem;
+  }
+  .time-card__time-holder {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .time-card__hours {
+    margin-bottom: -0.5rem;
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
