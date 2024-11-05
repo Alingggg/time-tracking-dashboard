@@ -77,11 +77,11 @@ p {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
+.time-card__icon-container:hover .time-card__icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(17%) saturate(6422%) hue-rotate(174deg) brightness(120%) contrast(100%);
+}
 .time-card__icon {
   height: 20%;
-}
-.time-card__icon:hover {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(17%) saturate(6422%) hue-rotate(174deg) brightness(120%) contrast(100%);
 }
 .time-card__time-holder {
   display: flex;

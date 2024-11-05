@@ -93,15 +93,15 @@ p {
     &:hover {
       background-color: rgba(256, 256, 256, 0.3);
       cursor: pointer;
+
+      .time-card__icon {
+        filter: $option-hover-color;
+      }
     }
   }
 
   &__icon {
     height: 20%;
-
-    &:hover {
-      filter: $option-hover-color;
-    }
   }
 
   &__time-holder {
